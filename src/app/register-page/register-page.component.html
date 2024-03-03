@@ -1,0 +1,298 @@
+
+    <igx-tabs ng-app="">
+        <igx-tab-item>
+            <igx-tab-header>
+                <h6><b>Basic</b></h6>
+            </igx-tab-header>
+            <igx-tab-content>
+                <div>
+                    <div id="firstrow">
+                        <div id="RegistrationBox">
+                            <div>
+                                <h5 id="Registration">
+                                    Registration
+                                </h5>
+                            </div><br>
+
+                            <div id="Customername">
+                                <label>
+                                    Customer name :
+                                </label>
+                                <input type="text" placeholder="Enter the Customer name" required>
+
+                            </div>
+                            <br>
+                            <div id="Address">
+                                <label>
+                                    Address :
+                                </label>
+                                <input type="text" placeholder="Enter the Address " required>
+                            </div>
+                            <br>
+                            <div id="Country">
+                                <label>
+                                    Country :
+                                </label>
+                                <input type="text" placeholder="Enter the Country" required>
+                            </div>
+                            <br>
+                            <div id="Domainname">
+                                <label>
+                                    Domain name :
+                                </label>
+                                <input type="text" placeholder="Enter the Domain name " required>
+                            </div>
+
+                        </div>
+
+
+
+                        <div id="AdministratorDetailsBox">
+                            <h5>
+                                <b> Administrator Details</b>
+                            </h5>
+                            <div>
+                                <label>
+                                    Admin name :
+                                </label>
+                                <input type="text" placeholder="Enter the Customer name" required>
+                            </div>
+                            <div>
+                                <label>
+                                    Admin User / email ID :
+                                </label>
+                                <input type="text" placeholder="Enter the Address " required>
+
+                            </div>
+
+                            <div>
+                                <label>
+                                    Admin Password :
+                                </label>
+                                <input type="text" placeholder="Enter the Country" required>
+                            </div>
+
+                            <div>
+                                <label>
+                                    Contact number :
+                                </label>
+                                <input type="text" placeholder="Enter the Domain name " required>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div id="secondrow">
+                        <div id="ModuleSelectionBox">
+
+                            <h5>
+                                <b>Module Selection</b>
+                            </h5>
+                            <div>
+                                <label>Process</label>
+                                <input type="checkbox" ng-model="process">
+                            </div>
+                            <div>
+                                <label>
+                                    Otobox
+                                </label>
+                                <input type="checkbox" ng-model="otobox">
+                            </div>
+
+                            <div>
+                                <label>
+                                    VMS
+                                </label>
+                                <input type="checkbox" ng-model="vms">
+                            </div>
+
+                            <div>
+                                <label>
+                                    Search
+                                </label>
+                                <input type="checkbox" ng-model="search">
+                            </div>
+
+                            <div>
+                                <label>
+                                    Tally
+                                </label>
+                                <input type="checkbox" ng-model="tally">
+
+                            </div>
+
+                        </div>
+
+                        <div id="SubcriptionPeriod">
+                            <h5>
+                                <b>Subcription Period</b>
+                            </h5>
+
+                            <div id="d1">
+                                <div>
+                                    <label>From : <input type="date"></label>
+
+                                </div>
+                                <div>
+                                    <label>To : <input type="date" placeholder="To"></label>
+
+                                </div>
+                            </div>
+
+                            <br>
+                            <div id="d2">
+                                <div>
+                                    <label>From : <input type="date"></label>
+
+                                </div>
+                                <div>
+                                    <label>To :<input type="date" placeholder="To"></label>
+
+                                </div>
+                            </div>
+                            <br>
+
+                            <div id="d3">
+                                <div>
+                                    <label>From : <input type="date"> </label>
+
+                                </div>
+                                <div>
+                                    <label>To : <input type="date" placeholder="To"></label>
+
+                                </div>
+                            </div>
+                            <br>
+                            <div id="d4">
+                                <div>
+                                    <label>From : <input type="date"> </label>
+
+                                </div>
+                                <div>
+                                    <label>To : <input type="date" placeholder="To"></label>
+
+                                </div>
+                            </div>
+                            <br>
+                            <div id="d5">
+                                <div>
+                                    <label>From : <input type="date"></label>
+
+                                </div>
+                                <div>
+                                    <label>To : <input type="date" placeholder="To"></label>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div id="button">
+                        <button><b>Save</b></button>
+                        <button><b>Edit</b></button>
+                    </div>
+
+                </div>
+
+            </igx-tab-content>
+
+        </igx-tab-item>
+        <igx-tab-item>
+
+            <igx-tab-header>
+                <h6 ng-if="process"><b>Process</b></h6>
+
+            </igx-tab-header>
+            <igx-tab-content>
+                Albums
+            </igx-tab-content>
+        </igx-tab-item>
+
+        <igx-tab-item>
+        
+            <igx-tab-header>
+                <h6 ng-if="otobox"><b>Otobox</b></h6>
+            </igx-tab-header>
+        
+            <igx-tab-content>
+                Albums
+            </igx-tab-content>
+        </igx-tab-item>
+
+        <igx-tab-item>
+            <igx-tab-header>
+                <h6 ng-if="vms"><b>VMS</b></h6>
+            </igx-tab-header>
+            <igx-tab-content>
+                Albums
+            </igx-tab-content>
+        </igx-tab-item>
+
+        <igx-tab-item>
+            <igx-tab-header >
+
+                <h6 ng-if="search"><b>Search</b></h6>
+            </igx-tab-header>
+            <igx-tab-content>
+                Albums
+            </igx-tab-content>
+        </igx-tab-item>
+
+        <igx-tab-item>
+        
+            <igx-tab-header >
+                <h6 ng-if="tally"><b>Tally</b></h6>
+            </igx-tab-header>
+        
+            <igx-tab-content>
+                <div id="CustomerTallyDetails">
+                    <h5><b>Customer Tally Details</b></h5>
+                    <div>
+                        <label>Tally User name :</label>
+                        <input type="text" placeholder="Enter the Tally UserName">
+                    </div>
+                    <div>
+                        <label>Tally User email id :</label>
+                        <input type="text" placeholder="Enter the Tally User email id">
+                    </div>
+
+                    <div>
+                        <label>Tally License info :</label>
+                        <input type="text" placeholder="Enter the Tally License info">
+                    </div>
+
+                    <div>
+                        <label>Tally User name :</label>
+                        <input type="text" placeholder="Enter the Tally User name ">
+                    </div>
+
+                    <div>
+                        <label>Customer Logo upload :</label>
+                        <input type="text" placeholder="Enter the Customer Logo upload  ">
+                    </div>
+
+                    <div>
+                        <label>Tally Setting file : </label>
+                        <input type="file">
+                    </div>
+
+                    <div>
+                        <label>Tally Data file :</label>
+                        <input type="file">
+                    </div>
+                    <div id="button">
+                        <button><b>Save</b></button>
+                        <button><b>Edit</b></button>
+                    </div>
+                </div>
+
+            </igx-tab-content>
+        </igx-tab-item>
+        <igx-tabs>
+
+
+

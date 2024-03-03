@@ -1,0 +1,45 @@
+#btn{
+    background-color:blueviolet;
+    color: white;
+    border-radius: 5px;
+    align-items: center;
+}
+#btn:hover{
+    cursor: pointer;
+}
+#container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 8%;
+    margin-left: 37%;
+    margin-right: 37%;
+    height: 300px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white; 
+}
+#logo{
+    width: 360px;
+    height: 120px;
+    margin-left: 38%;
+    margin-top: 2%;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+}
+.container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+label{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}

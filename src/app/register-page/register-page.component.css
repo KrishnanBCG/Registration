@@ -1,0 +1,111 @@
+#RegistrationBox {
+    display: flex;
+    height: 250px;
+    flex-direction: column;
+    font-size: large;
+    background-color: white;
+    width: 600px;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#Registration {
+    display: flex;
+    width: 200px;
+    height: 30px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    color: orange;
+    font-size: x-large;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    display: inline-block;
+    width: 300px;
+}
+
+#Customername,
+#Address,
+#Country,
+#Domainname {
+    display: flex;
+
+
+}
+
+#AdministratorDetailsBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: large;
+    height: 200px;
+
+}
+
+h5 {
+    color: orange;
+}
+
+#ModuleSelectionBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: large;
+    height: 300px;
+
+}
+
+#d1,
+#d2,
+#d3,
+#d4,
+#d5 {
+    display: flex;
+
+}
+
+#firstrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#secondrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+}
+
+#CustomerTallyDetails {
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    justify-content: space-evenly;
+    height: 500px;
+}
+
+#SubcriptionPeriod {
+    height: 300px;
+    width: 500px;
+    margin-top: 2%;
+}
+
+#button {
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+    margin-left: 40%;
+}
+
+button {
+    color: orange;
+    background-color: black;
+    border-radius: 11px;
+    width: 40%;
+}
+igx-tab-header{
+    display: flex;
+    flex-direction: row;
+}

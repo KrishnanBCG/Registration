@@ -1,0 +1,29 @@
+<div id="all">
+    <!-- <img id="logo" width="1920" height="644" src="https://seppam.com/wp-content/uploads/2023/08/seppam-new-black-01.png" class="attachment-full lazyloaded" alt="" data-src="https://seppam.com/wp-content/uploads/2023/08/seppam-new-black-01.png" decoding="async"> -->
+        <div id="container" [class.mat-elevation-z8]="isActive">
+            <form method="get">
+                <div>
+                <h3 id="head1" [class.mat-elevation-z8]="isActive"> Please Enter your login details </h3>
+                </div><br>
+                <div id="mail" >
+                    <mat-form-field class="login">
+                      <mat-label class="lab">Enter your email</mat-label>
+                      <input matInput [formControl]="email" required>
+                      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                    </mat-form-field>
+                  </div><br>
+                <div id="pass">
+                    <mat-form-field  class="login">
+                        <mat-label class="lab">Password</mat-label>
+                        <input matInput type="password" value="" required [type]="hide? 'password' : 'text'">
+                        <i class="material-icons" matSuffix (click)="hide=!hide">
+                            {{hide ? 'visibility': 'visibility_off'}}
+                        </i>
+                    </mat-form-field>
+                </div><br>
+                <div id="btn">
+                    <button mat-raised-button [class.mat-elevation-z8]="isActive">Login</button>
+                </div>
+            </form>
+            <div>
+    </div>
